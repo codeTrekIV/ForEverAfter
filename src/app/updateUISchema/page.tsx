@@ -15,6 +15,7 @@ const showAdminSettings = {
 const initialData = { userType: "user", adminSettings: "" };
 const theme = createTheme({});
 const UpdateUISchema = () => {
+
   const [data, setData] = useState(initialData);
   const [uiSchema, setUiSchema] = useState({
     type: "VerticalLayout",
