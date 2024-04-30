@@ -7,8 +7,7 @@ import {
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-import { patientSchema } from "../../../schemas/patientSchema"; // Assuming the correct file path is "../schemas/patientSchema"
-import { vanillaCells, vanillaRenderers } from "@jsonforms/vanilla-renderers";
+import { patientSchema } from "../../../schemas/patientSchema";
 
 const theme = createTheme();
 
@@ -65,17 +64,6 @@ const PatientIntakeForm = () => {
       {
         type: "Control",
         scope: "#/properties/parentGuardian",
-        rule: {
-          effect: "SHOW",
-          condition: {
-            scope: "#/properties/dob",
-            schema: {
-              type: "string",
-              format: "date",
-              maximum: 0,
-            },
-          },
-        },
       },
     ],
   };

@@ -19,9 +19,9 @@ const Hero: React.FC<HeroProps> = ({ title, description, imageUrl }) => {
           <p className="text-xl my-4">{description}</p>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={() => router.push("/dashboard")}
+            onClick={() => router.push("/intake")}
           >
-            Get Started
+            Sign Up Now
           </button>
         </div>
         <div className="flex justify-end flex-1 z-10">
