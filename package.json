@@ -19,6 +19,7 @@
     "@jsonforms/vanilla-renderers": "^3.2.1",
     "@mui/material": "^5.15.15",
     "ajv": "^8.12.0",
+    "ajv-errors": "^3.0.0",
     "json-logic-js": "^2.0.2",
     "next": "14.2.2",
     "react": "^18",
