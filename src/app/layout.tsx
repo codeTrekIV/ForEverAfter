@@ -42,6 +42,11 @@ export default function RootLayout({
                   Custom Rendered Fields
                 </Link>
               </li>
+              <li className="hover:bg-blue-900">
+                <Link href="/updateUISchema" className="block p-4">
+                  Conditional fields with JSON Logic
+                </Link>
+              </li>
             </ul>
           </aside>
           <main className="flex-1 p-10">{children}</main>
