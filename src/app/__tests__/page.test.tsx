@@ -3,6 +3,14 @@ import "@testing-library/jest-dom";
 
 import Home from "../page";
 
+jest.mock("next/navigation", () => ({
+  useRouter() {
+    return {
+      prefetch: () => null,
+    };
+  },
+}));
+
 describe("Home Page", () => {
   it("should render the homepage", () => {
     render(<Home />);

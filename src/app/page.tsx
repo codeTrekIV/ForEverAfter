@@ -1,14 +1,13 @@
-import Image from "next/image";
+import Hero from "./components/hero";
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-4xl font-bold text-center">
-        Welcome to ForEverAfter
-      </h1>
-      <p className="text-xl mt-5 text-gray-700 text-center">
-        Helping you plan today for peace of mind tomorrow.
-      </p>
+    <div className="container mx-auto px-4 bg-dark-green">
+      <Hero
+        title="Prepare Your Legacy with Peace of Mind"
+        description="Join ForEverAfter and secure your future today."
+        imageUrl="/Foreverafter.png"
+      />
     </div>
   );
 }
