@@ -1,4 +1,6 @@
 "use client";
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useState, useEffect } from "react";
 import jsonLogic, { AdditionalOperation } from "json-logic-js";
 import { JsonForms } from "@jsonforms/react";
@@ -12,7 +14,7 @@ const showAdminSettings = {
 };
 const initialData = { userType: "user", adminSettings: "" };
 const theme = createTheme({});
-const updateUISchema = () => {
+const UpdateUISchema = () => {
   const [data, setData] = useState(initialData);
   const [uiSchema, setUiSchema] = useState({
     type: "VerticalLayout",
@@ -72,4 +74,4 @@ const updateUISchema = () => {
   );
 };
 
-export default updateUISchema;
+export default UpdateUISchema;
